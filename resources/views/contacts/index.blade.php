@@ -15,7 +15,9 @@
                    <h2> <a href="{{ route('contacts.show', $contact->id) }}"> {{$contact->name}} </a> </h2>
                     </div>
                   
-
+                    <div class="paginacion">
+                       {{$$contacts->links()}}
+                    </div>
                   @endforeach
                    
                     </div>
